@@ -1,0 +1,63 @@
+		.button1 {
+		    background-color: #4CAF50;
+		    border: none;
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    cursor: pointer;
+		}
+		.button1:hover {background-color: #3e8e41}
+
+		.button1:active {
+		  background-color: #3e8e41;
+		  box-shadow: 0 5px #666;
+		  transform: translateY(4px);
+		}
+		
+		.button2 {
+		    background-color: #f44336;
+		    border: none;
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    cursor: pointer;
+		}
+		.button2:hover {background-color: #da190b}
+
+		.button2:active {
+		  background-color: #da190b;
+		  box-shadow: 0 5px #666;
+		  transform: translateY(4px);
+		}
+		
+		.magnify {width: 440px; margin: 10px;position: relative;}/* auto; position: relative;*/
+
+		/*Lets create the magnifying glass*/
+		.large {
+		width: 175px; height: 175px;
+		position: absolute;
+		border-radius: 100%;
+
+
+		/*Multiple box shadows to achieve the glass effect*/
+		box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 
+		0 0 7px 7px rgba(0, 0, 0, 0.25), 
+		inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+
+		/*Lets load up the large image first*/
+		background: url('images/moist.png') no-repeat;
+
+		/*hide the glass by default*/
+		display: none;
+		}
+
+		/*To solve overlap bug at the edges during magnification*/
+		.small { display: block; }

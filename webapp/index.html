@@ -1,0 +1,55 @@
+<!-- web client for a simple server-side application to demonstrate running a node API Appserver on a Raspberry Pi to display I/O values in a web browser -->
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>My soil moisture control app</title>
+        
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="date_time.js"></script>
+		<script src="magnify.js"></script>
+		<script src="mygpio.js"></script>
+        <!-- load our client-side app code which makes the API calls to our server -->        
+		<script src="myclient.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="mystyles.css">
+		
+    </head>
+    <body onload ="date_time('date_time');myclient();mygpio()">
+       <H1>My soil moisture control app</H1> 
+	   <p>
+       <span id="date_time"></span>
+        </p>
+		</p>
+		<div id="inputs">
+            <div id="input_26"><p>...</p></div>
+            <div id="input_20"><p>...</p></div>    
+        </div>
+		</p>
+		<p>
+		<h2>Activate Water Pump</h2>	
+		<div id="params">
+			<button type="button" onclick="mygpio(1)" class="button1">ON</button>
+			<button type="button" onclick="mygpio(0)" class="button2">OFF</button> 
+		</div>
+		</p>
+		<!--
+		<p>
+		<img src = "images/moist.png" style ="width:50%;height:50%;"/>
+		</p>
+		-->
+		<!-- Lets make a simple image magnifier -->
+		<p>
+		<div class="magnify">
+	
+			<!-- This is the magnifying glass which will contain the original/large version -->
+			<div class="large"></div>
+				<!-- This is the small image -->
+				<img class="small" src="images/moist.png" width="440"/>
+			</div>
+		</div>
+		<!-- Time for jquery action -->
+		<script src="magnify.js" type="text/javascript"></script>
+		</p>
+    </body>
+</html>
