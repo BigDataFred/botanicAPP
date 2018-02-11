@@ -14,11 +14,11 @@ smtp_pwd =  "1401SARITa"
 smtp_host = "Smtp.gmail.com"
 smtp_port = 465
 
-smtp_sender = "fredericrouxw@gmail.com"
-smtp_receivers = ["fredericrouxw@gmail.com","saurtenetxe@gmail.com"]
+smtp_sender = "example"
+smtp_receivers = ["example","sexample"]
 
 
-message = "hi i am fred's palm tree. i am a bit thirsty. can you please give me some water?"
+message = "hi i am a bit thirsty. can you please give me some water?"
 
 def sendEmail(smtp_message):
 	try:
