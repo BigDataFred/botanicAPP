@@ -15,7 +15,7 @@ smtp_host = "Smtp.gmail.com"
 smtp_port = 465
 
 smtp_sender = "example"
-smtp_receivers = ["example","sexample"]
+smtp_receivers = ["example","example"]
 
 
 message = "hi i am a bit thirsty. can you please give me some water?"
