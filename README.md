@@ -1,5 +1,5 @@
 # `botanicAPP v2.0`
-<img src="dashboard_capture.png" width="400" />
+<img src="./res/dashboard_capture.png" width="400" />
 
 * Code repository for **Raspberry Pi** remote controlled water pump project
 * Developer: BigDataFred
