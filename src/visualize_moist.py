@@ -6,7 +6,7 @@ import numpy as np
 from sys import exit
 
 pckl_file = "./res/moist.pkl"
-fig_file = './res/moist.png';
+fig_file = './app/img/moist.png';
 
 fig = plt.figure()
 
