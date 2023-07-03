@@ -5,8 +5,8 @@ import time
 import numpy as np
 from sys import exit
 
-pckl_file = "/home/pi/py/moisture_sensor/moist.pkl"
-fig_file = '/home/pi/py/moisture_sensor/webapp/images/moist.png';
+pckl_file = "./res/moist.pkl"
+fig_file = './res/moist.png';
 
 fig = plt.figure()
 

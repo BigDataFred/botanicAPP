@@ -13,7 +13,7 @@ bus = smbus.SMBus(1)
 bus.write_byte(0x48,0) # i2cget -y 1
 last_reading =-1
 
-PICKLE_FILE = '/home/pi/py/moisture_sensor/moist.pkl'
+PICKLE_FILE = './res/moist.pkl'
 
 def append_chart_point(chart,point):
     if len(chart) >= 96:
